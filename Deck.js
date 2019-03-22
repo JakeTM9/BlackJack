@@ -57,13 +57,13 @@ function startGame(){
                         dealerFaceDown = card;
                         cardValue = parseInt(card, 10);
                         document.getElementById("map_dimg" + numCard[currentCard]).src = "card0.jpg";
-                        document.getElementById("map_dimg" + numCard[currentCard]).width = "50";
+                         document.getElementById("map_dimg" + numCard[currentCard]).width = "100";
                         document.getElementById("map_dimg" +numCard[currentCard]).style.display = "";
                     }
                     else{
                         cardValue = parseInt(card, 10);
                         document.getElementById("map_dimg" + numCard[currentCard]).src = "card" + card + ".jpg";
-                        document.getElementById("map_dimg" + numCard[currentCard]).width = "50";
+                        document.getElementById("map_dimg" + numCard[currentCard]).width = "100";
                         document.getElementById("map_dimg" +numCard[currentCard]).style.display = "";
                     }
         
@@ -122,7 +122,7 @@ function startGame(){
                     card = Deck.shift();
             cardValue = parseInt(card, 10);
             document.getElementById("map_img" + numCard[currentCard]).src = "card" + card + ".jpg";
-            document.getElementById("map_img" + numCard[currentCard]).width = "50";
+            document.getElementById("map_img" + numCard[currentCard]).width = "100";
             document.getElementById("map_img" +numCard[currentCard]).style.display = "";
             currentCard++;
 
@@ -175,7 +175,7 @@ function startGame(){
                     document.getElementById("heading2").innerHTML = "BUST!! YOU LOSE"
                     currentCard = 0;
                         document.getElementById("map_dimg" + numCard[currentCard]).src = "card" + dealerFaceDown + ".jpg";
-                        document.getElementById("map_dimg" + numCard[currentCard]).width = "50";
+                        document.getElementById("map_dimg" + numCard[currentCard]).width = "100";
                         document.getElementById("map_dimg" +numCard[currentCard]).style.display = "";
                 }
                 
@@ -191,6 +191,9 @@ function startGame(){
         x.style.display = "block";
         x = document.getElementById("hiddenDiv");
         x.style.display = "none";
+
+        document.getElementById("dealerHand").innerHTML = "Dealer's Hand:"
+        document.getElementById("userHand").innerHTML = "Your Hand:"   
     }
 }
     
@@ -203,7 +206,7 @@ function startGame(){
         cardValue = parseInt(card, 10);
         document.getElementById("map_img" + numCard[currentCard]).src = "card" + card + ".jpg";
         
-        document.getElementById("map_img" + numCard[currentCard]).width = "50";
+        document.getElementById("map_img" + numCard[currentCard]).width = "100";
         document.getElementById("map_img" +numCard[currentCard]).style.display = "";
         currentCard++;
 
@@ -257,7 +260,7 @@ function startGame(){
                     document.getElementById("heading2").innerHTML = "BUST!! YOU LOSE"
                     currentCard = 0;
                         document.getElementById("map_dimg" + numCard[currentCard]).src = "card" + dealerFaceDown + ".jpg";
-                        document.getElementById("map_dimg" + numCard[currentCard]).width = "50";
+                        document.getElementById("map_dimg" + numCard[currentCard]).width = "100";
                         document.getElementById("map_dimg" +numCard[currentCard]).style.display = "";
                 }
             }
@@ -268,7 +271,7 @@ function startGame(){
             currentCardHolder = currentCard;
             currentCard = 0;
                         document.getElementById("map_dimg" + numCard[currentCard]).src = "card" + dealerFaceDown + ".jpg";
-                        document.getElementById("map_dimg" + numCard[currentCard]).width = "50";
+                        document.getElementById("map_dimg" + numCard[currentCard]).width = "100";
                         document.getElementById("map_dimg" +numCard[currentCard]).style.display = "";
 
 
@@ -280,7 +283,7 @@ function startGame(){
                         card = Deck.shift();
                         cardValue = parseInt(card, 10);
                         document.getElementById("map_dimg" + numCard[currentCard]).src = "card" + card + ".jpg";
-                        document.getElementById("map_dimg" + numCard[currentCard]).width = "50";
+                        document.getElementById("map_dimg" + numCard[currentCard]).width = "100";
                         document.getElementById("map_dimg" +numCard[currentCard]).style.display = "";
                         currentCard++
                     
