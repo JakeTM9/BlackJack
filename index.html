@@ -9,29 +9,67 @@
 	</script>
 </head>
 <body>
-        <h2 id = "heading1">  Jakob's BlackJack! </h1>
-    <div>
-        <img id = "map_img1"    />
-        <img id = "map_img2" />
-        <img id = "map_img3"/>
-        <img id = "map_img4" />
-        <img id = "map_img5"   />
-        <img id = "map_img6" />
-        <img id = "map_img7"/>
-        <img id = "map_img8" />
-        <img id = "map_img9"   />
-        <img id = "map_img10" />
-        <img id = "map_img11"/>
-    </div>   
-    <div>
     
-            <button onclick = drawCard()>Hit</button>
-            <button onclick = stand()>Stand</button>
-            <button onclick = "document.location.reload(true)">Reset</button>
-        </div>
+    <h1 id = "heading1">  Jakob's BlackJack! </h1>
+    <div id = "hiddenDiv">
+    <button id = "start" onclick = startGame()>Click Me To Start</button>
+    </div>
+
+    <div id = "outer">
+    <div id = "div1">
+            <h2 id = "userHand"> Dealer's Hand: </h2>
+
+            <img id = "map_dimg1" height = "75" />
+            <img id = "map_dimg2" height = "75" />
+            <img id = "map_dimg3" height = "75"/>
+            <img id = "map_dimg4" height = "75"/>
+            <img id = "map_dimg5" height = "75"  />
+            <img id = "map_dimg6"height = "75" />
+            <img id = "map_dimg7"/>
+            <img id = "map_dimg8" />
+            <img id = "map_dimg9"   />
+            <img id = "map_dimg10" />
+            <img id = "map_dimg11"/>
+
+            
+        
+            
+            
+    </div>
+    </div>
+    <div id = "outer">
+    <div id = "div2">
+                
+            <h2 id = "userHand"> Your Hand: </h2>
+    
+            <img id = "map_img1" height = "75"  />
+            <img id = "map_img2" height = "75" />
+            <img id = "map_img3" height = "75"/>
+            <img id = "map_img4" height = "75"/>
+            <img id = "map_img5" height = "75"  />
+            <img id = "map_img6"height = "75" />
+            <img id = "map_img7"/>
+            <img id = "map_img8" />
+            <img id = "map_img9"   />
+            <img id = "map_img10" />
+            <img id = "map_img11"/>
+            <br><br>
+    
+                
+                
+    </div>
+    </div> 
+
+
+    <div id = "controls" style = "display: none">
+    <button id = "hit" onclick = drawCard()>Hit</button>
+                <button id = "stand" onclick = stand()>Stand</button>
+                <button id = "reset" onclick = "document.location.reload(true)">Reset</button>
+    </div>
+
 
     <div>
-        <h1 id = "heading2"></h1>
+            <h1 id = "heading2"></h1>
     </div>
 </body>
 </html>
